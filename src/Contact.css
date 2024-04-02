@@ -1,0 +1,74 @@
+/* Contact.css */
+
+.contact {
+    padding: 40px 0;
+  }
+  
+  .contact .pg-header {
+    background-color: rgb(124, 163, 124);
+    color: #dacdcd;
+    padding: 60px 0;
+    margin-bottom: 100px;
+    margin-top: -40px;
+  }
+  
+  .contact .pg-header h1 {
+    margin: 0;
+  }
+  
+  .contact .content {
+    margin-top: 20px;
+  }
+  
+  body.light .contact h2 {
+    color: #1b1b1b;
+  }
+
+  body.light .contact h2 {
+    color: #dfdfdf;
+  }
+
+  body.light .contact h2 {
+    color: #333;
+  }
+  
+  body.light .contact p {
+    color: #141614;
+  }
+
+  body.dark .contact p {
+    color: #cecece;
+  }
+  
+  /* Estilo para o formulário */
+  .contact form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contact button {
+    background-color: #358a37; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact button:hover {
+    background-color: #275a29; /* Cor de fundo verde escuro ao passar o mouse */
+  }
+  

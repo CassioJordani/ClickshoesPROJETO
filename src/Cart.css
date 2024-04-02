@@ -1,0 +1,62 @@
+/* Adicione estilos conforme necessário para o carrinho */
+
+body.light .cart {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+body.dark .cart {
+    background-color: #043013;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart-icon {
+  background-color: #60886c;  
+  display: flex;
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 4px;
+}
+
+.cart-icon:hover{
+  background-color: #87b895;
+}
+  
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc; 
+  margin-right: 850px;
+  padding-bottom: 10px;
+}
+  
+.cart img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+  
+.cart button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: rgb(33, 141, 91);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+  
+.cart button:hover {
+  background-color: #b30000;
+}
+  

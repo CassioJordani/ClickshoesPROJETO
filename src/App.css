@@ -1,0 +1,411 @@
+
+/* Estilos para o tema claro */
+body.light {
+	background-color: rgb(116, 150, 112);
+	color: rgb(47, 90, 43);
+}
+
+
+/* Estilos para o tema escuro */
+body.dark {
+	background-color: #1d3627;
+	color: #ffffff;
+}
+
+/* links */
+a {
+	text-decoration: none;
+}
+
+
+p {
+	font-size: 16px; 
+	line-height: 1.5; /* espaçamento entre linhas */
+	margin-bottom: 10px; /*para espaçamento entre parágrafos */
+	color: rgb(68, 100, 68);
+	font-family: 'Arial', sans-serif; 
+}
+
+/* MAIN ////////////////////////////////////////////////////////////// */
+
+/* cor do body da página para o tema claro */
+body.light main {
+	background-color: rgb(199, 235, 199);
+}
+
+/* cor do body da página para o tema escuro */
+body.dark main {
+	background-color: #063310;
+}
+
+/* aumentar o padding do body espaçamento*/
+main .content {
+	padding-top: 40px;
+	padding-bottom: 120px;
+}
+
+/* muda layout da faixa do body para o tema claro */
+body.light main .pg-header {
+	padding: 60px 0;
+	background: #93bd97;
+}
+
+/* muda layout da faixa do body para o tema escuro */
+body.dark main .pg-header {
+	padding: 60px 0;
+	background: #315e3c;
+}
+
+
+/* estilo fonte do subtitulo*/
+main .pg-header h2 {
+	color: rgb(161, 216, 161);
+	font-weight: 600;
+	font-size: 32px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* BUTTON ////////////////////////////////////////////////////////////// */
+
+/*personalizar botão*/
+.btn-primary {
+	border-radius: 10;
+	background-color: #3f5745; 
+	border-color: #3f5745;
+	color: #ffffff; 
+	margin-bottom: 10px;
+}
+
+/* Mudar a cor de fundo ao fazer hover */
+.btn-primary:hover {
+	transition: background-color 0.5s ease;
+	background-color: #37914d; 
+	border-color: #37914d;
+	color: #ffffff; 
+	margin-bottom: 10px;
+}
+
+.login-button {
+    background-color: #4ca04c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+	border-radius: 5px;
+}
+
+.button-group button {
+	margin-right: 4px;
+	margin-top: 3px;
+}
+
+/* BREADCRUMB ////////////////////////////////////////////////////////////// */
+
+/* definir tamanho e margem*/
+.breadcrumb {
+	margin-bottom: 30px;
+	font-size: 30px;
+	padding-right: 10px;
+}
+
+/* cor do endereço da página abaixo do header*/
+.breadcrumb a {
+	color: #0d6924;
+}
+
+/* localização*/
+@media all and (max-width: 191px) {
+	.breadcrumb.justify-content-end {
+		justify-content: flex-start !important;
+	}
+}
+
+/* ABOUT ////////////////////////////////////////////////////////////// */
+
+/* fonte do subtitulo da página sobre*/
+.about h2 {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.about h2::after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	bottom: -6px;
+	height: 2px;
+	background-color: #666; 
+	left: 0;
+	margin-bottom: 20px solid #4c504d; /* cria uma barrinha abaixo do texto */
+}
+
+/* PRODUCTS ////////////////////////////////////////////////////////////// */
+
+.products-row .card .card-body {
+	background: #f5f5f5;
+}
+
+.products-row .col-lg-4 {
+	margin-bottom: 20px;
+}
+
+.products-row .card-text {
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* CARD ////////////////////////////////////////////////////////////// */
+
+/* Estilo padrão do .card */
+.card {
+    border-radius: 0;
+    box-shadow: 0px 10px 10px #eee;
+}
+
+.card .card-title {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.card .img-wrap {
+	height: 300px;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.125);
+}
+
+.card .img-wrap img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+.card .price {
+	color: rgb(13, 253, 85);
+}
+
+.card .btn-primary {
+	font-weight: 600;
+}
+
+/* SINGLE PRODUCT ////////////////////////////////////////////////////////////// */
+
+.single h2 {
+	text-transform: capitalize;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.single h2::after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	bottom: -6px;
+	height: 2px;
+	background-color: #666;
+	left: 0;
+}
+
+.single .btn-primary {
+	font-weight: 600;
+}
+
+.single .price {
+	font-size: 22px;
+}
+
+.single .price strong {
+	color: rgb(194, 34, 34)
+}
+
+/* POSTS ////////////////////////////////////////////////////////////// */
+
+.posts .col-sm-6 {
+	margin-bottom: 20px;
+}
+
+.posts .card-title {
+	text-transform: capitalize;
+}
+
+.posts .card-text {
+	text-align: center;
+}
+
+/* HEADER ////////////////////////////////////////////////////////////// */
+
+/* fundo do cabeçalho*/
+body.light header {
+	height: 100px;
+	padding: 10px 50px;
+	background-color: rgb(52, 92, 47);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: bottom;
+}
+
+/* fundo do cabeçalho*/
+body.dark header {
+	height: 100px;
+	padding: 10px 50px;
+	background-color: rgb(21, 41, 19);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: bottom;
+}
+
+/* rotação do logotipo*/
+header .logo {
+	transform: rotate(-6deg);
+	transition: all 0.3s ease;
+	margin: auto 0;
+	padding-left: -20px;
+
+}
+
+header .logo:hover {
+	transform: rotate(0deg);
+}
+
+/* detalhes do logotipo */
+body.light header .brand {
+	font-size: 30px;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Leckerli One', cursive;
+	background-color: rgb(36, 77, 47);
+	border-radius: 40px;
+	border-bottom: 2px solid #acacac;
+	text-shadow: 2px 2px 0px #000;
+}
+
+body.dark header .brand {
+	font-size: 30px;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Leckerli One', cursive;
+	background-color: rgb(30, 61, 39);
+	border-radius: 40px;
+	border-bottom: 2px solid #acacac;
+	text-shadow: 2px 2px 0px #000;
+}
+
+.imagem-nav {
+	border-left: 20px;
+	border-radius: 10px;
+}
+  
+
+header .nav {
+	background-color: rgb(36, 77, 47);
+	border-radius: 20px;
+	margin-left: auto;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	margin: auto 0;
+}
+
+/* navlink e hover do header*/
+header .nav-link {
+	font-weight: 700;
+	color: #a3a3a3;
+	border-radius: 0;
+	padding: 10px 10px;
+	background-color: rgb(36, 77, 47);
+}
+
+header .nav-link:hover {
+	transition: color 0.5s ease;
+	color: #ffffff;
+}
+
+header .form-group {
+	margin: 0 10px;
+	
+}
+  
+header .form-group label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+  
+header .form-group input[type="email"],
+header .form-group input[type="password"] {
+	height: 32px;
+	padding: 0 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+  
+header .form-group button[type="submit"] {
+	height: 34px;
+	padding: 0 10px;
+	margin-left: 10px;
+}
+
+/* FOOTER ////////////////////////////////////////////////////////////// */
+
+body.light footer {
+	padding: 40px 0 100px 0;
+	background-color: #507253;
+}
+
+body.dark footer {
+	padding: 40px 0 100px 0;
+	background-color: #1a251b;
+}
+
+footer .nav-link {
+	color: rgba(31, 83, 57, 0.75);
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 10px;
+}
+
+
+/* hover do link navegação */
+footer .nav-link:hover {
+	color: #fff;
+}
+
+footer .nav-link.active {
+	color: #fff;
+	border-bottom: 1px solid #666;
+}
+/* texto do 'direitos reservados' */
+footer .copyrights {
+	color: rgba(170, 165, 165, 0.75);
+	text-align: center;
+	margin-top: 10px;
+}
+
+footer .copyrights a {
+	color: rgba(117, 153, 120, 0.75);
+}
+
+footer .copyrights a:hover {
+	color: #3fb653;
+}
